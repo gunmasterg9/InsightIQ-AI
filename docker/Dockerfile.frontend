@@ -1,0 +1,23 @@
+FROM node:24-alpine AS base
+
+# Install dependencies only when needed
+WORKDIR /app
+
+# Install dependencies based on the preferred package manager
+COPY frontend/package.json ./
+RUN npm install
+
+# Rebuild the source code only when needed
+COPY frontend/ ./
+
+# Disable telemetry during build
+ENV NEXT_TELEMETRY_DISABLED=1
+
+RUN npm run build
+
+# Production image, copy all the files and run next
+ENV NODE_ENV=production
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]

@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./insightiq.db
+      - GCS_BUCKET_NAME=insightiq-ai-datasets
+      - BQ_DATASET_NAME=insightiq_analytics
+      - GOOGLE_CLOUD_PROJECT=
+      - GEMINI_API_KEY=
+      - MOCK_GCP=true
+    volumes:
+      - backend-data:/app/data
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - backend
+
+volumes:
+  backend-data:
