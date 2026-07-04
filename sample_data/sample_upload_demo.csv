@@ -1,0 +1,51 @@
+Transaction_ID,Customer_ID,Customer_Name,Segment,Country,Transaction_Date,Amount,Product_Category,Payment_Method,Fraud_Flag,Risk_Score,CPU_Processing_Time_ms,GPU_Processing_Time_ms
+TXN200001,CUST2001,Reliance Industries,Retail,India,2026-06-01 09:15:30,12500.00,Electronics,Credit Card,0,22,0.1845,0.0156
+TXN200002,CUST2002,Tata Consultancy,Finance,India,2026-06-01 10:22:14,45000.50,Cloud Services,Bank Transfer,0,18,0.1723,0.0132
+TXN200003,CUST2003,Infosys Ltd,Healthcare,India,2026-06-01 11:05:45,8750.25,Software,Digital Wallet,0,31,0.1567,0.0114
+TXN200004,CUST2004,Samsung Electronics,Retail,Singapore,2026-06-02 08:30:00,67500.00,Electronics,Credit Card,1,82,0.2105,0.0178
+TXN200005,CUST2005,Deutsche Bank AG,Finance,Germany,2026-06-02 09:45:12,125000.75,Consulting,Bank Transfer,1,91,0.1932,0.0165
+TXN200006,CUST2006,Wipro Technologies,MSME,India,2026-06-02 14:20:33,3200.00,Software,ACH,0,15,0.1456,0.0098
+TXN200007,CUST2007,Amazon Web Services,Supply Chain,USA,2026-06-03 07:10:55,89000.00,Cloud Services,Bank Transfer,0,45,0.2034,0.0187
+TXN200008,CUST2008,Flipkart India,Retail,India,2026-06-03 12:30:18,1500.99,Electronics,Digital Wallet,0,12,0.1289,0.0091
+TXN200009,CUST2009,HSBC Holdings,Finance,UK,2026-06-03 15:42:07,175000.00,Consulting,Credit Card,1,95,0.2187,0.0201
+TXN200010,CUST2010,Mahindra Group,Healthcare,India,2026-06-04 08:55:22,22000.00,Hardware,Bank Transfer,0,28,0.1678,0.0143
+TXN200011,CUST2011,Google Cloud,Supply Chain,USA,2026-06-04 10:12:40,55000.00,Cloud Services,ACH,0,20,0.1912,0.0167
+TXN200012,CUST2012,Bajaj Finance,Finance,India,2026-06-04 11:33:55,9800.75,Software,Credit Card,0,38,0.1534,0.0112
+TXN200013,CUST2013,Siemens AG,Healthcare,Germany,2026-06-05 09:00:10,42000.00,Hardware,Bank Transfer,0,25,0.1789,0.0149
+TXN200014,CUST2014,Shopee Pte Ltd,Retail,Singapore,2026-06-05 13:25:44,250000.00,Electronics,Digital Wallet,1,97,0.2234,0.0213
+TXN200015,CUST2015,HCL Technologies,MSME,India,2026-06-05 16:40:20,6700.50,Consulting,ACH,0,19,0.1423,0.0105
+TXN200016,CUST2016,JP Morgan Chase,Finance,USA,2026-06-06 08:15:33,130000.00,Cloud Services,Bank Transfer,1,88,0.2078,0.0192
+TXN200017,CUST2017,Adani Enterprises,Supply Chain,India,2026-06-06 10:50:12,18500.00,Hardware,Credit Card,0,42,0.1645,0.0138
+TXN200018,CUST2018,Barclays Bank,Finance,UK,2026-06-06 14:05:28,95000.25,Consulting,Bank Transfer,0,55,0.1987,0.0174
+TXN200019,CUST2019,Tech Mahindra,MSME,India,2026-06-07 09:30:44,4200.00,Software,Digital Wallet,0,14,0.1367,0.0096
+TXN200020,CUST2020,DBS Bank,Finance,Singapore,2026-06-07 11:22:17,78000.00,Cloud Services,ACH,0,35,0.1856,0.0161
+TXN200021,CUST2001,Reliance Industries,Retail,India,2026-06-07 15:10:55,15800.00,Electronics,Credit Card,0,26,0.1712,0.0145
+TXN200022,CUST2004,Samsung Electronics,Retail,Singapore,2026-06-08 08:45:30,185000.00,Hardware,Credit Card,1,89,0.2145,0.0198
+TXN200023,CUST2002,Tata Consultancy,Finance,India,2026-06-08 10:30:22,52000.00,Consulting,Bank Transfer,0,21,0.1834,0.0155
+TXN200024,CUST2007,Amazon Web Services,Supply Chain,USA,2026-06-08 12:15:40,97500.50,Cloud Services,ACH,0,48,0.2023,0.0182
+TXN200025,CUST2021,ICICI Bank,Finance,India,2026-06-09 09:05:18,34000.00,Software,Bank Transfer,0,30,0.1623,0.0137
+TXN200026,CUST2022,Grab Holdings,Retail,Singapore,2026-06-09 11:40:55,2800.00,Electronics,Digital Wallet,0,16,0.1345,0.0094
+TXN200027,CUST2023,BMW Group,Healthcare,Germany,2026-06-09 14:20:33,68000.00,Hardware,Credit Card,0,40,0.1945,0.0169
+TXN200028,CUST2024,Microsoft Corp,Supply Chain,USA,2026-06-10 07:55:10,110000.00,Cloud Services,Bank Transfer,0,33,0.2067,0.0186
+TXN200029,CUST2025,Kotak Mahindra,Finance,India,2026-06-10 10:30:45,7500.00,Consulting,ACH,0,24,0.1489,0.0108
+TXN200030,CUST2009,HSBC Holdings,Finance,UK,2026-06-10 13:15:22,200000.00,Cloud Services,Credit Card,1,93,0.2198,0.0207
+TXN200031,CUST2026,Airtel India,MSME,India,2026-06-11 08:40:33,5600.50,Software,Digital Wallet,0,17,0.1412,0.0101
+TXN200032,CUST2027,Standard Chartered,Finance,UK,2026-06-11 11:05:18,85000.00,Consulting,Bank Transfer,0,50,0.1978,0.0172
+TXN200033,CUST2028,Nvidia Corp,Supply Chain,USA,2026-06-11 14:30:44,145000.00,Hardware,ACH,0,37,0.2089,0.0191
+TXN200034,CUST2029,Zomato Ltd,Retail,India,2026-06-12 09:20:10,1200.00,Electronics,Digital Wallet,0,11,0.1278,0.0088
+TXN200035,CUST2030,UBS Group,Finance,Germany,2026-06-12 12:45:55,165000.50,Cloud Services,Bank Transfer,1,90,0.2156,0.0199
+TXN200036,CUST2005,Deutsche Bank AG,Finance,Germany,2026-06-12 15:10:30,72000.00,Consulting,Credit Card,0,58,0.1923,0.0166
+TXN200037,CUST2003,Infosys Ltd,Healthcare,India,2026-06-13 08:30:22,11200.00,Software,Bank Transfer,0,29,0.1589,0.0119
+TXN200038,CUST2011,Google Cloud,Supply Chain,USA,2026-06-13 10:55:40,63000.00,Cloud Services,ACH,0,23,0.1878,0.0163
+TXN200039,CUST2031,Axis Bank,Finance,India,2026-06-13 13:40:15,28000.00,Hardware,Credit Card,0,34,0.1656,0.0141
+TXN200040,CUST2032,Sea Limited,Retail,Singapore,2026-06-14 07:15:33,195000.00,Electronics,Digital Wallet,1,94,0.2212,0.0209
+TXN200041,CUST2006,Wipro Technologies,MSME,India,2026-06-14 10:05:18,4800.00,Software,ACH,0,16,0.1434,0.0099
+TXN200042,CUST2033,Vodafone Group,Healthcare,UK,2026-06-14 12:50:44,37000.00,Consulting,Bank Transfer,0,27,0.1734,0.0147
+TXN200043,CUST2034,Meta Platforms,Supply Chain,USA,2026-06-15 08:20:10,82000.00,Cloud Services,Credit Card,0,41,0.1967,0.0175
+TXN200044,CUST2035,SBI Group,Finance,India,2026-06-15 11:35:55,16000.00,Hardware,Bank Transfer,0,32,0.1612,0.0135
+TXN200045,CUST2008,Flipkart India,Retail,India,2026-06-15 14:10:30,2100.50,Electronics,Digital Wallet,0,13,0.1312,0.0092
+TXN200046,CUST2036,Credit Suisse,Finance,Germany,2026-06-16 09:45:22,220000.00,Consulting,Bank Transfer,1,96,0.2245,0.0215
+TXN200047,CUST2037,Larsen & Toubro,Supply Chain,India,2026-06-16 12:20:40,48000.00,Hardware,ACH,0,36,0.1812,0.0158
+TXN200048,CUST2038,Oracle Corp,MSME,USA,2026-06-16 15:05:15,9200.00,Software,Credit Card,0,22,0.1523,0.0113
+TXN200049,CUST2039,Singtel Pte,Healthcare,Singapore,2026-06-17 08:50:33,31000.00,Cloud Services,Bank Transfer,0,25,0.1689,0.0144
+TXN200050,CUST2040,PayPal Holdings,Finance,USA,2026-06-17 11:15:18,105000.75,Consulting,ACH,0,52,0.2045,0.0184
