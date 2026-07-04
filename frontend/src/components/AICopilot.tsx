@@ -51,7 +51,7 @@ export default function AICopilot() {
 
     try {
       const token = localStorage.getItem("insightiq-token");
-      const res = await fetch(`http://localhost:8000/api/v1/ai/copilot?query=${encodeURIComponent(textToSend)}&dataset_id=0`, {
+      const res = await fetch(`https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/ai/copilot?query=${encodeURIComponent(textToSend)}&dataset_id=0`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }

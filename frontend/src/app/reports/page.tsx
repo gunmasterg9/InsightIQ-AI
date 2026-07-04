@@ -41,11 +41,11 @@ export default function ReportsPage() {
       let endpoint = "";
       
       if (report.type === "PDF") {
-        endpoint = `http://localhost:8000/api/v1/reports/export/pdf?dataset_id=${report.datasetId}`;
+        endpoint = `https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/reports/export/pdf?dataset_id=${report.datasetId}`;
       } else if (report.type === "Excel") {
-        endpoint = `http://localhost:8000/api/v1/reports/export/excel?dataset_id=${report.datasetId}`;
+        endpoint = `https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/reports/export/excel?dataset_id=${report.datasetId}`;
       } else {
-        endpoint = `http://localhost:8000/api/v1/reports/export/csv?dataset_id=${report.datasetId}`;
+        endpoint = `https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/reports/export/csv?dataset_id=${report.datasetId}`;
       }
 
       const res = await fetch(endpoint, {

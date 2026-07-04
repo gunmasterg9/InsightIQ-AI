@@ -41,7 +41,7 @@ export default function ForecastPage() {
       const token = localStorage.getItem("insightiq-token");
       
       // Fetch Forecast
-      const fRes = await fetch(`http://localhost:8000/api/v1/analytics/forecast?dataset_id=0&days=${days}`, {
+      const fRes = await fetch(`https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/analytics/forecast?dataset_id=0&days=${days}`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       if (!fRes.ok) throw new Error();
@@ -50,7 +50,7 @@ export default function ForecastPage() {
       setForecastData(fData.forecast);
       
       // Fetch Segments
-      const sRes = await fetch(`http://localhost:8000/api/v1/analytics/customer-segmentation?dataset_id=0`, {
+      const sRes = await fetch(`https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/analytics/customer-segmentation?dataset_id=0`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       if (!sRes.ok) throw new Error();

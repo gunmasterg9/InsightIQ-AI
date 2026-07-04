@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
@@ -18,7 +18,7 @@ interface Dataset {
   created_at: string;
 }
 
-export default function DatasetsPage() {
+function DatasetsPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(true);
@@ -29,7 +29,7 @@ export default function DatasetsPage() {
   const fetchDatasets = async () => {
     try {
       const token = localStorage.getItem("insightiq-token");
-      const res = await fetch("http://localhost:8000/api/v1/datasets/", {
+      const res = await fetch("https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/datasets/", {
         headers: { "Authorization": `Bearer ${token}` }
       });
       if (!res.ok) throw new Error();
@@ -72,7 +72,7 @@ export default function DatasetsPage() {
         prev.map((d) => (d.id === id ? { ...d, status: "Processing" } : d))
       );
 
-      const res = await fetch(`http://localhost:8000/api/v1/datasets/${id}/clean`, {
+      const res = await fetch(`https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/datasets/${id}/clean`, {
         method: "POST",
         headers: { "Authorization": `Bearer ${token}` }
       });
@@ -93,7 +93,7 @@ export default function DatasetsPage() {
     if (!confirm("Are you sure you want to remove this dataset from GCS & BigQuery?")) return;
     try {
       const token = localStorage.getItem("insightiq-token");
-      const res = await fetch(`http://localhost:8000/api/v1/datasets/${id}`, {
+      const res = await fetch(`https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/datasets/${id}`, {
         method: "DELETE",
         headers: { "Authorization": `Bearer ${token}` }
       });
@@ -247,5 +247,17 @@ export default function DatasetsPage() {
         </main>
       </div>
     </div>
+  );
+}
+
+export default function DatasetsPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen text-slate-400">
+        <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-primary"></div>
+      </div>
+    }>
+      <DatasetsPageContent />
+    </Suspense>
   );
 }

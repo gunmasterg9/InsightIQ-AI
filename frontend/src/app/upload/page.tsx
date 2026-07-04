@@ -83,7 +83,7 @@ export default function UploadPage() {
         setUploadProgress((p) => (p < 80 ? p + 15 : p));
       }, 300);
 
-      const res = await fetch("http://localhost:8000/api/v1/datasets/upload", {
+      const res = await fetch("https://insightiq-backend-1018473658663.us-central1.run.app/api/v1/datasets/upload", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${token}`
