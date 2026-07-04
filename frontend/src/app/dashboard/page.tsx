@@ -171,7 +171,11 @@ export default function DashboardPage() {
                     <CartesianGrid strokeDasharray="3 3" opacity={0.05} />
                     <XAxis dataKey="month" stroke="#94a3b8" fontSize={11} />
                     <YAxis stroke="#94a3b8" fontSize={11} />
-                    <Tooltip contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }} />
+                    <Tooltip 
+                      contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }}
+                      itemStyle={{ color: "#fff" }}
+                      labelStyle={{ color: "#fff" }}
+                    />
                     <Area type="monotone" dataKey="revenue" stroke="#2563eb" fillOpacity={1} fill="url(#colorRev)" strokeWidth={2} name="Revenue" />
                     <Area type="monotone" dataKey="profit" stroke="#76B900" fillOpacity={1} fill="url(#colorProf)" strokeWidth={2} name="Profit" />
                   </AreaChart>
@@ -185,7 +189,11 @@ export default function DashboardPage() {
               <div className="h-56 w-full flex justify-center items-center relative">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
-                    <Tooltip contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }} />
+                    <Tooltip 
+                      contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }}
+                      itemStyle={{ color: "#fff" }}
+                      labelStyle={{ color: "#fff" }}
+                    />
                     <Pie
                       data={categoryDistribution}
                       cx="50%"
@@ -233,7 +241,11 @@ export default function DashboardPage() {
                     <CartesianGrid strokeDasharray="3 3" opacity={0.05} />
                     <XAxis type="number" stroke="#94a3b8" fontSize={11} />
                     <YAxis dataKey="name" type="category" stroke="#94a3b8" fontSize={11} />
-                    <Tooltip contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }} />
+                    <Tooltip 
+                      contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }}
+                      itemStyle={{ color: "#fff" }}
+                      labelStyle={{ color: "#fff" }}
+                    />
                     <Bar dataKey="sales" fill="#3b82f6" radius={[0, 4, 4, 0]}>
                       {topProducts.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={index % 2 === 0 ? "#2563eb" : "#76B900"} />

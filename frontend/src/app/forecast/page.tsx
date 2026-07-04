@@ -200,7 +200,11 @@ export default function ForecastPage() {
                   <CartesianGrid strokeDasharray="3 3" opacity={0.05} />
                   <XAxis dataKey="date" stroke="#94a3b8" fontSize={11} tickFormatter={(val) => val.split(" ")[0]} />
                   <YAxis stroke="#94a3b8" fontSize={11} />
-                  <Tooltip contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }} />
+                  <Tooltip 
+                    contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }}
+                    itemStyle={{ color: "#fff" }}
+                    labelStyle={{ color: "#fff" }}
+                  />
                   <Legend />
                   <Line type="monotone" dataKey="Historical" stroke="#3b82f6" strokeWidth={3} dot={false} activeDot={{ r: 6 }} name="Historical Ingestion" />
                   <Line type="monotone" dataKey="Forecast" stroke="#76B900" strokeWidth={3} strokeDasharray="5 5" dot={false} name="Projected Trends" />
@@ -226,7 +230,12 @@ export default function ForecastPage() {
                     <XAxis type="number" dataKey="total_spent" name="Spent" unit="$" stroke="#94a3b8" fontSize={10} />
                     <YAxis type="number" dataKey="avg_risk" name="Risk" unit="%" stroke="#94a3b8" fontSize={10} />
                     <ZAxis type="category" dataKey="customer_name" name="Client" />
-                    <Tooltip cursor={{ strokeDasharray: '3 3' }} contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }} />
+                    <Tooltip 
+                      cursor={{ strokeDasharray: '3 3' }} 
+                      contentStyle={{ backgroundColor: "rgba(17,24,39,0.9)", borderColor: "#1f2937", borderRadius: "8px" }}
+                      itemStyle={{ color: "#fff" }}
+                      labelStyle={{ color: "#fff" }}
+                    />
                     
                     {/* Render different scatters for different clusters */}
                     {[0, 1, 2, 3].map((clusterId) => (
